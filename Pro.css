@@ -1,0 +1,504 @@
+    .Navbar{
+        height: 80px;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        /* border: 1px solid black; */
+    }
+    body{
+        background-color: #E3E3E1;
+    }
+
+
+    .Site-name{
+        height: 65px;
+        width: 250px;
+        /* border: 1px solid black; */
+        float: left;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .callit {
+        font-size: 30px;
+        font-weight: bold;
+        color: indigo;
+        font-family: 'Jua';
+        font-size: 58px;
+
+    }
+    
+    .it {
+        color: red;
+        font-family: 'Jua';
+        font-size: 60px;
+
+    }
+
+
+
+
+    .Navbar .Cart-count{
+        position: relative;
+        top: 20px;
+        left: 120px;
+        background-color: red;
+        height: 50px;
+        width: 150px;
+        border: 2px solid black;
+
+        font-size: 10px;
+    }
+
+    .icons{
+        height: 50px;
+        width: 400px;
+        /* border: 1px solid black; */
+        float: right;
+        margin-right: 100px;
+        margin-top: 13px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .icon-name{
+        height: 40px;
+        width: 40px;
+        /* border: 1px solid black; */
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .icon-name:hover{
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    .icon-name i{
+        font-size: 23px;
+        text-decoration: none;
+    }
+
+a{
+    color: black;
+    text-decoration: none;
+
+
+}
+
+
+    .Hbody{
+        height: 500px;
+        width: 1300px;
+        /* border: 2px solid black; */
+        margin: auto;
+        margin-top: 180px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .Hbody .product{
+        height: 414px;
+        width: 278px;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 2px 10px 10px rgb(117, 115, 112);
+    }
+
+
+    .Hbody .product:hover{
+        transform: scale(0.96);
+    }
+
+    .Hbody .product .primg{
+        height: 240px;
+        width: 180px;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 20px;
+    }
+
+
+
+    .Hbody .product .primg img{
+        height: 240px;
+        width: 180px;
+        object-fit: contain;
+    }
+
+
+    .Hbody .product .prtxt{
+        font-family: 'Sora';
+        font-size: 14px;
+        font-weight: normal;
+        margin-left: 48px;
+
+    }
+
+    .Hbody .product .color-select{
+        height: 70px;
+        width: 150px;
+        /* border: 1px solid black; */
+        margin-left: 48px;
+
+    }
+
+    .Hbody .product .color-select h1{
+        font-family: 'Sora';
+        font-size: 12px;
+        opacity: 60%;
+    }
+
+
+    .Hbody .product .color-select .sel-col{
+        height: 30px;
+        width: 130px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Hbody .product .color-select .sel-col .scolor{
+        height: 25px;
+        width: 25px;
+        /* border: 1px solid black; */
+        border-radius: 100%;
+    }
+
+
+    .scolor:hover{
+        outline: 2px solid rgb(0, 0, 0);
+    outline-offset: 2px;
+}
+
+.scolor:first-child{
+    background-color: #A59C97;
+}
+.scolor:nth-child(2){
+    background-color: #F2E4B5;
+}
+.scolor:nth-child(3){
+    background-color: #434240;
+}
+.scolor:nth-child(4){
+    background-color: #3E3950;
+}
+
+
+.Hbody .product .prprice{
+    font-family: 'Sora';
+    font-size: 16px;
+    font-weight: bolder;
+    margin-left: 48px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECOND PAGE(Item.html) */
+
+.Ibody{
+    position: relative;
+    top: 80px;
+    /* border: 2px solid black; */
+    height: 1200px;
+    width: 100%;
+
+}
+
+
+
+
+.Ibody .Item-Img{
+    height: 535px;
+    width: 463px;
+    /* border: 1px solid black; */
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 92px;
+    top: 78px;
+
+}
+
+.Ibody .Item-Img img{
+    object-fit: contain;
+    height: 535px;
+    width: 463px;
+}
+
+
+
+
+.Ibody .Item-sub-img{
+    height: 100px;
+    width: 463px;
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 92px;
+    top: 648px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.Ibody .Item-sub-img .subimg{
+    height: 90px;
+    width: 90px;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+}
+
+
+.Ibody .Item-sub-img .subimg img{
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+    border-radius: 15px;
+
+}
+
+.Ibody .Item-sub-img .subimg img:hover{
+    outline: 2px solid rgb(114, 162, 218);
+    outline-offset: 3px;
+}
+
+
+
+
+.Ibody .hr1{
+    position: absolute;
+    transform: rotate(90deg);
+    top: 470px;
+    left: 255px;
+}
+
+
+
+
+.Ibody .Item-name{
+    position: absolute;
+    font-family: 'Sora';
+    font-weight: bold;
+    font-size: 32px;
+    top: 100px;
+    width: 606px;
+    left: 689px;
+
+}
+
+
+.Ibody .Item-price{
+    position: absolute;
+    font-family: 'Sora';
+    font-weight: bold;
+    font-size: 40px;
+    left: 689px;
+    top: 220px;
+
+}
+
+
+.Ibody .color-select{
+    height: 155px;
+    width: 250px;
+    /* border: 1px solid black; */
+    position: absolute;
+    left: 689px;
+    top: 350px;
+
+
+}
+.Ibody .color-select h1{
+    font-family: 'Sora';
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 60%;
+}
+
+
+.Ibody .color-select .sel-col{
+    height: 100px;
+    width: 230px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Ibody .color-select .sel-col .scolor{
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid black; */
+    border-radius: 100%;
+}
+
+
+.scolor:hover{
+    outline: 2px solid rgb(0, 0, 0);
+    outline-offset: 3px;
+}
+
+.scolor:first-child{
+    background-color: #A59C97;
+}
+.scolor:nth-child(2){
+    background-color: #F2E4B5;
+}
+.scolor:nth-child(3){
+    background-color: #434240;
+}
+.scolor:nth-child(4){
+    background-color: #3E3950;
+}
+
+
+.Ibody .Quantity{
+    width: 178px;
+    height: 58px;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Sora';
+    background-color: white;
+    border-radius: 28px;
+    position: absolute;
+    left: 759px;
+    top: 590px;
+
+}
+
+.Ibody .Quantity h1{
+    font-size: 20px;
+}
+
+.Ibody .Quantity button{
+    font-family: 'Sora';
+    font-weight: bolder;
+    background-color: white;
+    border: none;
+    font-size: 20px;
+
+}
+
+
+.Ibody .Add-to-cart{
+    width: 330px;
+    height: 58px;
+    /* border: 2px solid black; */
+    font-family: 'Sora';
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-image: linear-gradient(to right,#AA2BD4,#8063DA,#509FE0);
+    position: absolute;
+    top: 590px;
+    left: 1100px;
+
+}
+
+.Ibody .hr2{
+    position: absolute;
+    top: 710px;
+    left: 689px;
+
+}
+
+
+.Ibody .Product-details{
+    font-family: 'Sora';
+    position: absolute;
+    top: 730px;
+    left: 689px;
+    /* border: 1px solid black; */
+    height: 300px;
+    width: 400px;
+}
+
+.Ibody .Product-details h1{
+    font-size: 20px;
+
+}
+
+.Ibody .Product-details li{
+    list-style-type: none;
+    line-height: 40px;
+}
+
+
+
+
+.Ibody .hr3{
+    position: absolute;
+    left: 10%;
+    top: 1150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Cbody{
+
+    height: 500px;
+    position: relative;
+    top: 180px;
+    left: 150px;
+    width: 1200px;
+    border-radius: 25px;
+    /* border: 1px solid black; */
+    box-shadow: 2px 5px 10px rgb(78, 78, 77);
+}

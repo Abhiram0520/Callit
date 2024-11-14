@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="Pro.css">
+    <link href='https://fonts.googleapis.com/css?family=Jua' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sora' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Navbar">
+       <a href="Home.html"> <div class="Site-name"> <span class="callit">Call</span><span class="it">it</span></a>
+        </div>
+        <div class="icons">
+            <div class="icon-name"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <a href="Cart.html"><div class="icon-name"><i class="fa-solid fa-bag-shopping"></i></div></a>
+            <div class="icon-name"><i class="fa-solid fa-user"></i></div>
+        </div>
+    </div>
+    <div class="Ibody">
+        <div class="Item-Img"><img src="oneplus12.webp"></div>
+        <div class="Item-sub-img">
+            <div class="subimg"><img src="oneplus12.jpg" alt=""></div>
+            <div class="subimg"><img src="oneplus1jpg.jpg" alt=""></div>
+            <div class="subimg"><img src="oneplus2.jpg" alt=""></div>
+            <div class="subimg"><img src="oneplus3.jpg" alt=""></div>
+        </div>
+        <hr class="hr1" width="800px" size="2" color="black">
+        <h1 class="Item-name">OnePlus 12</h1>
+        <h2 class="Item-price">69,999</h2>
+        <div class="color-select">
+            <h1>Color</h1>
+            <div class="sel-col">
+                <div class="scolor"></div>
+                <div class="scolor"></div>
+                <div class="scolor"></div>
+                <div class="scolor"></div>
+            </div>
+        </div>
+        <div class="Quantity">
+            <button>+</button>
+            <h1>1</h1>
+            <button>-</button>
+        </div>
+        <div class="Add-to-cart">ADD TO CART</div>
+        <hr class="hr2" size="2" color="black" width="800px">
+        <div class="Product-details">
+            <h1>Product Details</h1>
+            <li>Brand: OnePlus</li>
+            <li>Operating System: SD Gen3</li>
+            <li>RAM Memory: 256GB</li>
+            <li>System Storage: 256GB</li>
+            <li>Screen Size: 6.3 Inches</li>
+        </div>
+        <hr class="hr3" size="2" color="black" width="80%">
+    </div>
+    <script>
+
+
+
+        function addToCart() {
+            // Get item details
+            const itemName = document.querySelector(".Item-name").textContent;
+            const itemPrice = parseInt(document.querySelector(".Item-price").textContent.replace(",",""));
+            const itemImg = document.querySelector(".Item-Img img").src;
+
+            // Get cart from local storage or create new
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            // Check if item already exists in cart
+            const existingItem = cart.find(item => item.name === itemName);
+
+            if (existingItem) {
+                // Increase quantity if item exists
+                existingItem.quantity++;
+            } else {
+                // Add new item to cart
+                cart.push({
+                    name: itemName,
+                    price: itemPrice,
+                    img: itemImg,
+                    quantity: 1
+                });
+            }
+
+            // Save updated cart to local storage
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            alert("Item added to cart!");
+        }
+
+        // Attach function to Add to Cart button
+        document.querySelector(".Add-to-cart").addEventListener("click", addToCart);
+
+
+
+        var a = document.getElementsByTagName("img")
+        var b = document.getElementsByClassName("subimg")
+        console.log(a);
+
+        b[0].addEventListener('mouseover', function () {
+            a[0].src = "oneplus12.jpg"
+        })
+        b[1].addEventListener('mouseover', function () {
+            a[0].src = "oneplus1jpg.jpg"
+        })
+        b[2].addEventListener('mouseover', function () {
+            a[0].src = "oneplus2.jpg"
+        })
+        b[3].addEventListener('mouseover', function () {
+            a[0].src = "oneplus3.jpg"
+        })
+
+    </script>
+</body>
+
+</html>
